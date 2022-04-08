@@ -7,10 +7,10 @@ import { BrowserRouter } from "react-router-dom";
 import UserProvider from "./context/UserProvider";
 
 ReactDOM.render(
-  <UserProvider>
-    <BrowserRouter>
+  <BrowserRouter>
+    <UserProvider>
       <App />
-    </BrowserRouter>
-  </UserProvider>,
+    </UserProvider>
+  </BrowserRouter>,
   document.getElementById("root")
 );
