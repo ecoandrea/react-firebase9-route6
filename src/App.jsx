@@ -5,14 +5,14 @@ import Home from "./routes/Home";
 import Register from "./routes/Register";
 import Navbar from "./components/Navbar";
 import RequireAuth from "./components/RequireAuth";
-import { UserContext } from "./context/UserProvider";
 import { useContext } from "react";
+import { UserContext } from "./context/UserProvider";
 
 const App = () => {
   const { user } = useContext(UserContext);
 
   if (user === false) {
-    return <p>Loading ...</p>;
+    return <p>Loading...</p>;
   }
 
   return (
@@ -34,4 +34,5 @@ const App = () => {
     </>
   );
 };
+
 export default App;

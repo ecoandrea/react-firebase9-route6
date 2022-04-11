@@ -12,7 +12,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("procesando form: ", email, password);
-
     try {
       await loginUser(email, password);
       console.log("Usuario logeado");
@@ -24,7 +23,7 @@ const Login = () => {
 
   return (
     <>
-      <h1>Login </h1>
+      <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -38,7 +37,6 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
         <button type="submit">Login</button>
       </form>
     </>
