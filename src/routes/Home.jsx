@@ -1,10 +1,7 @@
-import ExampleRef from "../../ExampleRef";
-
 const Home = () => {
   return (
     <>
       <h1>Home</h1>
-      <ExampleRef />
     </>
   );
 };
